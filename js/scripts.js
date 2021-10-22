@@ -53,7 +53,7 @@ $(document).ready(function() {
     }
 
     if (csharp > ruby && csharp > script) {
-      $('#bob-barker').show();
+      $('#answer-csharp').show();
     } else if (ruby > csharp && ruby > script) {
       $('#bob-barker').show();
     } else if (script > csharp && script > ruby) {

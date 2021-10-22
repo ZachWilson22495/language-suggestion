@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(56, 56, 56);
+  color: rgb(182, 255, 109);
+}
+
+.btn  {
+  display: block;
+}
+
+#answer-csharp {
+  display: none;
+}
+
+#answer-ruby {
+  display: none;
+}
+
+#answer-script {
+  display: none;
+}
+
+#tiebreaker {
+  display: none;
+
+}
+
+#everything {
+
+}
+
+#why-tho {
+  display: none;
+}
