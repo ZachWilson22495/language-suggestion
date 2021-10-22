@@ -8,24 +8,27 @@ body {
 }
 
 #answer-csharp {
+  text-align: center;
   display: none;
 }
 
 #answer-ruby {
+  text-align: center;
   display: none;
 }
 
 #answer-script {
+  text-align: center;
   display: none;
 }
 
 #tiebreaker {
   display: none;
-
 }
 
 #everything {
-
+  background-color: rgb(56, 56, 56);
+  color: rgb(182, 255, 109);
 }
 
 #why-tho {

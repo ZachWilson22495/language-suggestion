@@ -29,17 +29,17 @@ $(document).ready(function() {
     }
 
     if (career === "upstart") {
-      csharp +=1;
-    } else if (career === "plug") {
       ruby +=1;
+    } else if (career === "plug") {
+      csharp +=1;
     } else {
       script +=1;
     }
 
     if (complexity === "simple") {
-      csharp +=1;
-    } else if (complexity === "bring-it") {
       ruby +=1;
+    } else if (complexity === "bring-it") {
+      csharp +=1;
     } else {
       script +=1;
     }
@@ -53,11 +53,20 @@ $(document).ready(function() {
     }
 
     if (csharp > ruby && csharp > script) {
+      $('#quiz').hide();
       $('#answer-csharp').show();
+      $('#answer-ruby').hide();
+      $('#answer-script').hide();
     } else if (ruby > csharp && ruby > script) {
-      $('#bob-barker').show();
+      $('#quiz').hide();
+      $('#answer-ruby').show();
+      $('#answer-csharp').hide();
+      $('#answer-script').hide();
     } else if (script > csharp && script > ruby) {
-      $('#bob-barker').show();
+      $('#quiz').hide();
+      $('#answer-script').show();
+      $('#answer-csharp').hide();
+      $('#answer-ruby').hide();
     } else {
       $('#tiebreaker').show();
     }
