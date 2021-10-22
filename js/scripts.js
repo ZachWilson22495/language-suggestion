@@ -10,13 +10,12 @@ $(document).ready(function() {
     let career = $("input:radio[name=career]:checked").val();
     let complexity = $("input:radio[name=complexity]:checked").val();
     let name = $("input:radio[name=name]:checked").val();
-
+    
     if (code === "yes") {
       csharp +=1;
       ruby +=1;
       script +=1;
     } else {
-      $('#everything').hide();
       $('#why-tho').show();
     }
 
@@ -54,21 +53,39 @@ $(document).ready(function() {
 
     if (csharp > ruby && csharp > script) {
       $('#quiz').hide();
+      $('#tiebreaker').hide();
       $('#answer-csharp').show();
       $('#answer-ruby').hide();
       $('#answer-script').hide();
+      $('#retry').show();
     } else if (ruby > csharp && ruby > script) {
       $('#quiz').hide();
+      $('#tiebreaker').hide();
       $('#answer-ruby').show();
       $('#answer-csharp').hide();
       $('#answer-script').hide();
+      $('#retry').show();
     } else if (script > csharp && script > ruby) {
       $('#quiz').hide();
+      $('#tiebreaker').hide();
       $('#answer-script').show();
       $('#answer-csharp').hide();
       $('#answer-ruby').hide();
+      $('#retry').show();
     } else {
       $('#tiebreaker').show();
     }
+
+    $("#retry").click(function() {
+      csharp = 0; 
+      ruby = 0;
+      script = 0;
+      $('#quiz').show();
+      $('#tiebreaker').hide();
+      $('#answer-script').hide();
+      $('#answer-csharp').hide();
+      $('#answer-ruby').hide();
+      $('#retry').hide();
+    });
   });
-});
+  });

@@ -7,23 +7,49 @@ body {
   display: block;
 }
 
+#quiz {
+  background-color: rgb(19, 19, 19);
+  padding: 20px;
+  margin: 100px;
+}
+
 #answer-csharp {
   text-align: center;
   display: none;
+  background-color: rgb(19, 19, 19);
+  border-width: 300px;
+  padding: 20px;
+  margin: 50px;
+  margin-bottom: 50px;
+  
 }
 
 #answer-ruby {
   text-align: center;
   display: none;
+  background-color: rgb(19, 19, 19);
+  border-width: 300px;
+  padding: 20px;
+  margin: 50px;
+  margin-bottom: 50px;
 }
 
 #answer-script {
   text-align: center;
   display: none;
+  background-color: rgb(19, 19, 19);
+  border-width: 300px;
+  padding: 20px;
+  margin: 50px;
+  margin-bottom: 50px;
 }
 
 #tiebreaker {
   display: none;
+  background-color: rgb(19, 19, 19);
+  border-width: 500px;
+  padding: 20px;
+  margin: 100px;
 }
 
 #everything {
@@ -33,4 +59,21 @@ body {
 
 #why-tho {
   display: none;
+  color: darkorange;
+}
+
+.answer-box {
+  background-color: rgb(19, 19, 19);
+  border-width: 500px;
+  padding: 20px;
+  margin: 100px;
+}
+
+#retry {
+  text-align: center;
+  display: none;
+  background-color: rgb(19, 19, 19);
+  border-width: 500px;
+  padding: 20px;
+  font-size: 100px
 }
