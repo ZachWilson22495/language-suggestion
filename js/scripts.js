@@ -15,16 +15,51 @@ $(document).ready(function() {
       csharp +=1;
       ruby +=1;
       script +=1;
-  } else {
+    } else {
       $('#everything').hide();
       $('#why-tho').show();
-  }
+    }
 
     if (create === "big") {
       csharp +=1;
-  } else if (create === "small") {
+    } else if (create === "small") {
       ruby +=1;
-  } else {
+    } else {
       script +=1;
-  }
-  buh
+    }
+
+    if (career === "upstart") {
+      csharp +=1;
+    } else if (career === "plug") {
+      ruby +=1;
+    } else {
+      script +=1;
+    }
+
+    if (complexity === "simple") {
+      csharp +=1;
+    } else if (complexity === "bring-it") {
+      ruby +=1;
+    } else {
+      script +=1;
+    }
+
+    if (name === "smart") {
+      csharp +=1;
+    } else if (name === "symbol") {
+      ruby +=1;
+    } else {
+      script +=1;
+    }
+
+    if (csharp > ruby && csharp > script) {
+      $('#bob-barker').show();
+    } else if (ruby > csharp && ruby > script) {
+      $('#bob-barker').show();
+    } else if (script > csharp && script > ruby) {
+      $('#bob-barker').show();
+    } else {
+      $('#tiebreaker').show();
+    }
+  });
+});
