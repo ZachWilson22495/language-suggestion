@@ -5,7 +5,7 @@
 #### A Half-Serious Quiz to Help you Find your Coding Language
 
 #### Link to Portfolio on GitHub Pages
-https://zachwilson22495.github.io/Portfolio/
+https://github.com/ZachWilson22495/language-suggestion
 
 ## Technologies Used
 
